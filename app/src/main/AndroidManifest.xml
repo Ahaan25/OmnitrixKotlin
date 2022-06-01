@@ -27,18 +27,18 @@
         <activity
             android:name=".Heatblast"
             android:exported="false"
-            android:label="@string/title_activity_heatblast"></activity>
+            android:label="@string/title_activity_heatblast" />
         <activity
             android:name=".Ghostfreak"
             android:exported="false"
-            android:label="@string/title_activity_ghostfreak"></activity>
+            android:label="@string/title_activity_ghostfreak" />
         <activity
             android:name=".Cannonball"
             android:exported="false"
-            android:label="@string/title_activity_cannonball"></activity>
+            android:label="@string/title_activity_cannonball" />
         <activity
             android:name=".FourArms"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true"
