@@ -25,10 +25,20 @@
             android:value="true" />
 
         <activity
+            android:name=".Heatblast"
+            android:exported="false"
+            android:label="@string/title_activity_heatblast"></activity>
+        <activity
+            android:name=".Ghostfreak"
+            android:exported="false"
+            android:label="@string/title_activity_ghostfreak"></activity>
+        <activity
             android:name=".Cannonball"
             android:exported="false"
-            android:label="@string/title_activity_cannonball">
-        </activity>
+            android:label="@string/title_activity_cannonball"></activity>
+        <activity
+            android:name=".FourArms"
+            android:exported="false"></activity>
         <activity
             android:name=".SplashScreen"
             android:exported="true"
@@ -38,10 +48,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".FourArms"
-            android:exported="false">
         </activity>
     </application>
 

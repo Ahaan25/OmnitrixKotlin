@@ -7,4 +7,6 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="title_activity_cannonball">Cannonball</string>
+    <string name="title_activity_ghostfreak">Ghostfreak</string>
+    <string name="title_activity_heatblast">Heatblast</string>
 </resources>
