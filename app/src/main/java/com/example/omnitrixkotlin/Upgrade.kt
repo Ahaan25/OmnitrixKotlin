@@ -2,16 +2,16 @@ package com.example.omnitrixkotlin
 
 import android.app.Activity
 import android.os.Bundle
-import com.example.omnitrixkotlin.databinding.ActivityCannonballBinding
+import com.example.omnitrixkotlin.databinding.ActivityUpgradeBinding
 
-class Cannonball : Activity() {
+class Upgrade : Activity() {
 
-    private lateinit var binding: ActivityCannonballBinding
+    private lateinit var binding: ActivityUpgradeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityCannonballBinding.inflate(layoutInflater)
+        binding = ActivityUpgradeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
     }
