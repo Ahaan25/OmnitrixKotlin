@@ -9,6 +9,8 @@ import android.os.Handler
 class SplashScreen : Activity() {
 
     private val SC:Long=1000
+    val context=applicationContext
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
@@ -17,7 +19,6 @@ class SplashScreen : Activity() {
             finish()
         }, SC)
 
-        val context=applicationContext
         var mediaPlayer = MediaPlayer.create(context, R.raw.omnitrixlaunchsound)
         mediaPlayer.start()
     }
