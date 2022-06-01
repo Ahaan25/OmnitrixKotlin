@@ -2,16 +2,16 @@ package com.example.omnitrixkotlin
 
 import android.app.Activity
 import android.os.Bundle
-import com.example.omnitrixkotlin.databinding.ActivityMainBinding
+import com.example.omnitrixkotlin.databinding.ActivityFourarmsBinding
 
-class MainActivity : Activity() {
+class FourArms : Activity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityFourarmsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityFourarmsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
     }
