@@ -21,10 +21,14 @@ class FourArms : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fourarms)
 
+
+
+        /*
         Handler().postDelayed({
             startActivity(Intent(this,Upgrade::class.java))
             finish()
         }, SC)
+        */
 
         /*
         View.OnTouchListener(object : OnSwipeTouchListener(this@FourArms), (v: View, event: MotionEvent) -> Boolean {
