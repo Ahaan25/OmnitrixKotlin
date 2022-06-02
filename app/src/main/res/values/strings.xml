@@ -6,7 +6,14 @@
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_fourarms">Fourarms</string>
     <string name="title_activity_cannonball">Cannonball</string>
     <string name="title_activity_ghostfreak">Ghostfreak</string>
     <string name="title_activity_heatblast">Heatblast</string>
+    <string name="title_activity_diamonhead">Diamonhead</string>
+    <string name="title_activity_ripjaws">Ripjaws</string>
+    <string name="title_activity_graymatter">Graymatter</string>
+    <string name="title_activity_stinkfly">Stinkfly</string>
+    <string name="title_activity_wildmutt">Wildmutt</string>
+    <string name="title_activity_xlr8">xlr8</string>
 </resources>

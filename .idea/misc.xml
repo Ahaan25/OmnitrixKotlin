@@ -4,12 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_cannonball.xml" value="0.7976190476190477" />
+        <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_diamonhead.xml" value="0.7333333333333333" />
         <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_fourarms.xml" value="0.7976190476190477" />
         <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_ghostfreak.xml" value="0.7976190476190477" />
+        <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_graymatter.xml" value="0.7333333333333333" />
         <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_heatblast.xml" value="0.7976190476190477" />
         <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_main.xml" value="0.6" />
+        <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_ripjaws.xml" value="0.7333333333333333" />
         <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_splash_screen.xml" value="0.7481203007518797" />
+        <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_stinkfly.xml" value="0.7333333333333333" />
         <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_upgrade.xml" value="0.7333333333333333" />
+        <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_wildmutt.xml" value="0.7333333333333333" />
+        <entry key="..\:/Android Studio/OmnitrixKotlin/app/src/main/res/layout/activity_xlr8.xml" value="0.7333333333333333" />
       </map>
     </option>
   </component>
