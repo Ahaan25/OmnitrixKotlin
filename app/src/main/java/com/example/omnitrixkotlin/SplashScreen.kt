@@ -18,7 +18,8 @@ class SplashScreen : Activity() {
             finish()
         }, SC)
 
-        var mediaPlayer = MediaPlayer.create(applicationContext, R.raw.omnitrixlaunchsound)
+        var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.omnitrixlaunchsound)
         mediaPlayer.start()
+
     }
 }
