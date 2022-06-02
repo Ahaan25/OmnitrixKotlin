@@ -15,7 +15,7 @@ class Ripjaws : Activity() {
         binding = ActivityRipjawsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var mediaPlayer= MediaPlayer.create(applicationContext, R.raw.swipesound)
+        var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
     }

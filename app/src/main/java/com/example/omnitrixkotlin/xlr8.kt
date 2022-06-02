@@ -15,7 +15,7 @@ class xlr8 : Activity() {
         binding = ActivityXlr8Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var mediaPlayer= MediaPlayer.create(applicationContext, R.raw.swipesound)
+        var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
     }

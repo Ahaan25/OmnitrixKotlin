@@ -15,7 +15,7 @@ class Stinkfly : Activity() {
         binding = ActivityStinkflyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var mediaPlayer= MediaPlayer.create(applicationContext, R.raw.swipesound)
+        var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
     }

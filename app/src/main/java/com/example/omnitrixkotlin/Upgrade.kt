@@ -16,7 +16,7 @@ class Upgrade : Activity() {
         binding = ActivityUpgradeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var mediaPlayer= MediaPlayer.create(applicationContext, R.raw.swipesound)
+        var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
     }
