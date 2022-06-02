@@ -5,6 +5,10 @@ import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Handler
+import android.text.method.Touch
+import android.widget.Button
+import android.widget.RelativeLayout
+import android.widget.Toast
 import com.example.omnitrixkotlin.databinding.ActivityFourarmsBinding
 
 class FourArms : Activity() {
@@ -15,9 +19,7 @@ class FourArms : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding=ActivityFourarmsBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_fourarms)
 
         Handler().postDelayed({
             startActivity(Intent(this,Upgrade::class.java))
