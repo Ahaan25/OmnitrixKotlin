@@ -5,6 +5,7 @@ import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Handler
+import android.text.Layout
 import android.text.method.Touch
 import android.widget.Button
 import android.widget.RelativeLayout
@@ -21,7 +22,11 @@ class FourArms : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fourarms)
 
-
+        val button1=findViewById<Button>(R.id.button2)
+        button1.setOnClickListener(){
+            intent=Intent(this, Ghostfreak::class.java)
+            startActivity(intent)
+        }
 
         /*
         Handler().postDelayed({

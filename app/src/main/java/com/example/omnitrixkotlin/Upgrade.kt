@@ -1,9 +1,11 @@
 package com.example.omnitrixkotlin
 
 import android.app.Activity
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.text.method.Touch
+import android.widget.Button
 import com.example.omnitrixkotlin.databinding.ActivityUpgradeBinding
 
 class Upgrade : Activity() {
@@ -18,6 +20,12 @@ class Upgrade : Activity() {
 
         var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
+
+        val button1=findViewById<Button>(R.id.button8)
+        button1.setOnClickListener(){
+            intent= Intent(this, Wildmutt::class.java)
+            startActivity(intent)
+        }
 
     }
 }
