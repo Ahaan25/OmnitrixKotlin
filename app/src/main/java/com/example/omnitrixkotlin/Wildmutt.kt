@@ -21,9 +21,15 @@ class Wildmutt : Activity() {
         var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
-        val button1=findViewById<Button>(R.id.button9)
-        button1.setOnClickListener(){
+        val button9=findViewById<Button>(R.id.button9)
+        button9.setOnClickListener(){
             intent= Intent(this, xlr8::class.java)
+            startActivity(intent)
+        }
+
+        val button19=findViewById<Button>(R.id.button19)
+        button19.setOnClickListener(){
+            intent= Intent(this, Upgrade::class.java)
             startActivity(intent)
         }
 

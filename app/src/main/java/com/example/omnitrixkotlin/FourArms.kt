@@ -22,9 +22,18 @@ class FourArms : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fourarms)
 
-        val button1=findViewById<Button>(R.id.button2)
-        button1.setOnClickListener(){
+        var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
+        mediaPlayer.start()
+
+        val button2=findViewById<Button>(R.id.button2)
+        button2.setOnClickListener(){
             intent=Intent(this, Ghostfreak::class.java)
+            startActivity(intent)
+        }
+
+        val button12=findViewById<Button>(R.id.button12)
+        button12.setOnClickListener(){
+            intent= Intent(this, Diamonhead::class.java)
             startActivity(intent)
         }
 

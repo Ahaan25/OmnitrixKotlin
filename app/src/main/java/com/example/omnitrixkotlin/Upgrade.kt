@@ -21,9 +21,15 @@ class Upgrade : Activity() {
         var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
-        val button1=findViewById<Button>(R.id.button8)
-        button1.setOnClickListener(){
+        val button8=findViewById<Button>(R.id.button8)
+        button8.setOnClickListener(){
             intent= Intent(this, Wildmutt::class.java)
+            startActivity(intent)
+        }
+
+        val button18=findViewById<Button>(R.id.button18)
+        button18.setOnClickListener(){
+            intent= Intent(this, Stinkfly::class.java)
             startActivity(intent)
         }
 

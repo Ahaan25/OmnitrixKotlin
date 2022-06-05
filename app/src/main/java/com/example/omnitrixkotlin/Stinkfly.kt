@@ -20,9 +20,15 @@ class Stinkfly : Activity() {
         var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
-        val button1=findViewById<Button>(R.id.button7)
-        button1.setOnClickListener(){
+        val button7=findViewById<Button>(R.id.button7)
+        button7.setOnClickListener(){
             intent= Intent(this, Upgrade::class.java)
+            startActivity(intent)
+        }
+
+        val button17=findViewById<Button>(R.id.button17)
+        button17.setOnClickListener(){
+            intent= Intent(this, Heatblast::class.java)
             startActivity(intent)
         }
 

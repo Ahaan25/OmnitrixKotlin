@@ -26,5 +26,11 @@ class Diamonhead : Activity() {
             startActivity(intent)
         }
 
+        val button11=findViewById<Button>(R.id.button11)
+        button11.setOnClickListener(){
+            intent= Intent(this, xlr8::class.java)
+            startActivity(intent)
+        }
+
     }
 }

@@ -20,9 +20,15 @@ class xlr8 : Activity() {
         var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
-        val button1=findViewById<Button>(R.id.button10)
-        button1.setOnClickListener(){
+        val button10=findViewById<Button>(R.id.button10)
+        button10.setOnClickListener(){
             intent= Intent(this, Diamonhead::class.java)
+            startActivity(intent)
+        }
+
+        val button20=findViewById<Button>(R.id.button20)
+        button20.setOnClickListener(){
+            intent= Intent(this, Wildmutt::class.java)
             startActivity(intent)
         }
 

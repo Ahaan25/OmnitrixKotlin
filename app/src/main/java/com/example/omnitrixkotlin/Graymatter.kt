@@ -20,9 +20,15 @@ class Graymatter : Activity() {
         var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
-        val button1=findViewById<Button>(R.id.button4)
-        button1.setOnClickListener(){
+        val button4=findViewById<Button>(R.id.button4)
+        button4.setOnClickListener(){
             intent= Intent(this, Heatblast::class.java)
+            startActivity(intent)
+        }
+
+        val button14=findViewById<Button>(R.id.button14)
+        button14.setOnClickListener(){
+            intent= Intent(this, Ghostfreak::class.java)
             startActivity(intent)
         }
 

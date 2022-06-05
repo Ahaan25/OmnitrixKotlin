@@ -20,9 +20,15 @@ class Heatblast : Activity() {
         var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
-        val button1=findViewById<Button>(R.id.button5)
-        button1.setOnClickListener(){
+        val button5=findViewById<Button>(R.id.button5)
+        button5.setOnClickListener(){
             intent= Intent(this, Ripjaws::class.java)
+            startActivity(intent)
+        }
+
+        val button15=findViewById<Button>(R.id.button15)
+        button15.setOnClickListener(){
+            intent= Intent(this, Graymatter::class.java)
             startActivity(intent)
         }
 
