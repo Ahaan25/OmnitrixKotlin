@@ -29,37 +29,37 @@
             android:exported="false"
             android:label="@string/title_activity_wildmutt"/>
         <activity
+            android:name=".Upgrade"
+            android:exported="false"
+            android:label="@string/title_activity_cannonball" />
+        <activity
             android:name=".Stinkfly"
             android:exported="false"
             android:label="@string/title_activity_stinkfly" />
-        <activity
-            android:name=".Graymatter"
-            android:exported="false"
-            android:label="@string/title_activity_graymatter" />
         <activity
             android:name=".Ripjaws"
             android:exported="false"
             android:label="@string/title_activity_ripjaws" />
         <activity
-            android:name=".Diamonhead"
-            android:exported="false"
-            android:label="@string/title_activity_diamonhead" />
-        <activity
             android:name=".Heatblast"
             android:exported="false"
             android:label="@string/title_activity_heatblast" />
+        <activity
+            android:name=".Graymatter"
+            android:exported="false"
+            android:label="@string/title_activity_graymatter" />
         <activity
             android:name=".Ghostfreak"
             android:exported="false"
             android:label="@string/title_activity_ghostfreak" />
         <activity
-            android:name=".Upgrade"
-            android:exported="false"
-            android:label="@string/title_activity_cannonball" />
-        <activity
             android:name=".FourArms"
             android:exported="false"
             android:label="@string/title_activity_fourarms"/>
+        <activity
+            android:name=".Diamonhead"
+            android:exported="false"
+            android:label="@string/title_activity_diamonhead" />
         <activity
             android:name=".SplashScreen"
             android:exported="true"
