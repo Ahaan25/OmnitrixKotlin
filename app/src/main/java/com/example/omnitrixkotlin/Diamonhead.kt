@@ -20,7 +20,7 @@ class Diamonhead : Activity() {
         var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
-        val button1=findViewById<Button>(R.id.button)
+        val button1=findViewById<Button>(R.id.button1)
         button1.setOnClickListener(){
             intent= Intent(this, FourArms::class.java)
             startActivity(intent)
