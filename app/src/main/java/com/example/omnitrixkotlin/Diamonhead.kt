@@ -4,6 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
+import android.transition.Slide
+import android.transition.TransitionManager
 import android.widget.Button
 import com.example.omnitrixkotlin.databinding.ActivityDiamonheadBinding
 
