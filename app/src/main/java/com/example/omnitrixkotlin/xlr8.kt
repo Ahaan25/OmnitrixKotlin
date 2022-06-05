@@ -5,6 +5,7 @@ import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import com.example.omnitrixkotlin.databinding.ActivityXlr8Binding
 
 class xlr8 : Activity() {
@@ -33,4 +34,19 @@ class xlr8 : Activity() {
         }
 
     }
+
+    private var backPressedTime:Long = 0
+    lateinit var backToast: Toast
+    override fun onBackPressed() {
+        backToast = Toast.makeText(this, "Press back again to leave the app.", Toast.LENGTH_LONG)
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            backToast.cancel()
+            super.onBackPressed()
+            return
+        } else {
+            backToast.show()
+        }
+        backPressedTime = System.currentTimeMillis()
+    }
+
 }

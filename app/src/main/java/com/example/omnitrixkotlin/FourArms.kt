@@ -11,16 +11,17 @@ import android.widget.Button
 import android.widget.RelativeLayout
 import android.widget.Toast
 import com.example.omnitrixkotlin.databinding.ActivityFourarmsBinding
+import com.example.omnitrixkotlin.databinding.ActivityGhostfreakBinding
 
 class FourArms : Activity() {
 
-    var x1=0f; var x2=0f; var y1=0f; var y2=0f
-    private val SC:Long=1000
     private lateinit var binding: ActivityFourarmsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fourarms)
+
+        binding = ActivityFourarmsBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
@@ -36,41 +37,6 @@ class FourArms : Activity() {
             intent= Intent(this, Diamonhead::class.java)
             startActivity(intent)
         }
-
-        /*
-        Handler().postDelayed({
-            startActivity(Intent(this,Upgrade::class.java))
-            finish()
-        }, SC)
-        */
-
-        /*
-        View.OnTouchListener(object : OnSwipeTouchListener(this@FourArms), (v: View, event: MotionEvent) -> Boolean {
-            override fun onSwipeLeft() {
-                super.onSwipeLeft()
-                Toast.makeText(this@FourArms, "Swipe Left gesture detected", Toast.LENGTH_SHORT)
-                    .show()
-            }
-
-            override fun onSwipeRight() {
-                super.onSwipeRight()
-                Toast.makeText(this@FourArms, "Swipe Right gesture detected", Toast.LENGTH_SHORT)
-                    .show()
-            }
-
-            override fun onSwipeUp() {
-                super.onSwipeUp()
-                Toast.makeText(this@FourArms, "Swipe up gesture detected", Toast.LENGTH_SHORT)
-                    .show()
-            }
-
-            override fun onSwipeDown() {
-                super.onSwipeDown()
-                Toast.makeText(this@FourArms, "Swipe down gesture detected", Toast.LENGTH_SHORT)
-                    .show()
-            }
-        })
-        */
 
     }
 }
