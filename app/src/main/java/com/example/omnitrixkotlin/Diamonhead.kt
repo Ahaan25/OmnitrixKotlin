@@ -17,7 +17,7 @@ class Diamonhead : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityDiamonheadBinding.inflate(layoutInflater)
+        binding=ActivityDiamonheadBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
@@ -25,13 +25,13 @@ class Diamonhead : Activity() {
 
         val button1=findViewById<Button>(R.id.button1)
         button1.setOnClickListener(){
-            intent= Intent(this, FourArms::class.java)
+            intent=Intent(this, FourArms::class.java)
             startActivity(intent)
         }
 
         val button11=findViewById<Button>(R.id.button11)
         button11.setOnClickListener(){
-            intent= Intent(this, xlr8::class.java)
+            intent=Intent(this, xlr8::class.java)
             startActivity(intent)
         }
 

@@ -15,7 +15,7 @@ class Ghostfreak : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityGhostfreakBinding.inflate(layoutInflater)
+        binding=ActivityGhostfreakBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
@@ -23,13 +23,13 @@ class Ghostfreak : Activity() {
 
         val button3=findViewById<Button>(R.id.button3)
         button3.setOnClickListener(){
-            intent= Intent(this, Graymatter::class.java)
+            intent=Intent(this, Graymatter::class.java)
             startActivity(intent)
         }
 
         val button13=findViewById<Button>(R.id.button13)
         button13.setOnClickListener(){
-            intent= Intent(this, FourArms::class.java)
+            intent=Intent(this, FourArms::class.java)
             startActivity(intent)
         }
 

@@ -15,21 +15,21 @@ class Stinkfly : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityStinkflyBinding.inflate(layoutInflater)
+        binding=ActivityStinkflyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var mediaPlayer = MediaPlayer.create(applicationContext, R.raw.swipesound)
+        var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
-        val button7 = findViewById<Button>(R.id.button7)
+        val button7=findViewById<Button>(R.id.button7)
         button7.setOnClickListener() {
-            intent = Intent(this, Upgrade::class.java)
+            intent=Intent(this, Upgrade::class.java)
             startActivity(intent)
         }
 
-        val button17 = findViewById<Button>(R.id.button17)
+        val button17=findViewById<Button>(R.id.button17)
         button17.setOnClickListener() {
-            intent = Intent(this, Heatblast::class.java)
+            intent=Intent(this, Heatblast::class.java)
             startActivity(intent)
         }
 

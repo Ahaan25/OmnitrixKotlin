@@ -15,7 +15,7 @@ class xlr8 : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityXlr8Binding.inflate(layoutInflater)
+        binding=ActivityXlr8Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
         var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
@@ -23,30 +23,14 @@ class xlr8 : Activity() {
 
         val button10=findViewById<Button>(R.id.button10)
         button10.setOnClickListener(){
-            intent= Intent(this, Diamonhead::class.java)
+            intent=Intent(this, Diamonhead::class.java)
             startActivity(intent)
         }
 
         val button20=findViewById<Button>(R.id.button20)
         button20.setOnClickListener(){
-            intent= Intent(this, Wildmutt::class.java)
+            intent=Intent(this, Wildmutt::class.java)
             startActivity(intent)
         }
-
     }
-
-    private var backPressedTime:Long = 0
-    lateinit var backToast: Toast
-    override fun onBackPressed() {
-        backToast = Toast.makeText(this, "Press back again to leave the app.", Toast.LENGTH_LONG)
-        if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            backToast.cancel()
-            super.onBackPressed()
-            return
-        } else {
-            backToast.show()
-        }
-        backPressedTime = System.currentTimeMillis()
-    }
-
 }

@@ -15,15 +15,21 @@ class Ripjaws : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityRipjawsBinding.inflate(layoutInflater)
+        binding=ActivityRipjawsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var mediaPlayer = MediaPlayer.create(applicationContext, R.raw.swipesound)
+        var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
-        val button1 = findViewById<Button>(R.id.button6)
-        button1.setOnClickListener() {
-            intent = Intent(this, Stinkfly::class.java)
+        val button6=findViewById<Button>(R.id.button6)
+        button6.setOnClickListener() {
+            intent=Intent(this, Stinkfly::class.java)
+            startActivity(intent)
+        }
+
+        val button16=findViewById<Button>(R.id.button16)
+        button16.setOnClickListener() {
+            intent=Intent(this, Stinkfly::class.java)
             startActivity(intent)
         }
 

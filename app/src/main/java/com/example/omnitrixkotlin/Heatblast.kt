@@ -15,21 +15,21 @@ class Heatblast : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityHeatblastBinding.inflate(layoutInflater)
+        binding=ActivityHeatblastBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var mediaPlayer = MediaPlayer.create(applicationContext, R.raw.swipesound)
+        var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
-        val button5 = findViewById<Button>(R.id.button5)
+        val button5=findViewById<Button>(R.id.button5)
         button5.setOnClickListener() {
-            intent = Intent(this, Ripjaws::class.java)
+            intent=Intent(this, Ripjaws::class.java)
             startActivity(intent)
         }
 
-        val button15 = findViewById<Button>(R.id.button15)
+        val button15=findViewById<Button>(R.id.button15)
         button15.setOnClickListener() {
-            intent = Intent(this, Graymatter::class.java)
+            intent=Intent(this, Graymatter::class.java)
             startActivity(intent)
         }
 

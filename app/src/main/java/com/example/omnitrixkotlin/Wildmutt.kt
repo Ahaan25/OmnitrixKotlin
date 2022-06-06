@@ -16,21 +16,21 @@ class Wildmutt : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityWildmuttBinding.inflate(layoutInflater)
+        binding=ActivityWildmuttBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var mediaPlayer = MediaPlayer.create(applicationContext, R.raw.swipesound)
+        var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
-        val button9 = findViewById<Button>(R.id.button9)
+        val button9=findViewById<Button>(R.id.button9)
         button9.setOnClickListener() {
-            intent = Intent(this, xlr8::class.java)
+            intent=Intent(this, xlr8::class.java)
             startActivity(intent)
         }
 
-        val button19 = findViewById<Button>(R.id.button19)
+        val button19=findViewById<Button>(R.id.button19)
         button19.setOnClickListener() {
-            intent = Intent(this, Upgrade::class.java)
+            intent=Intent(this, Upgrade::class.java)
             startActivity(intent)
         }
 

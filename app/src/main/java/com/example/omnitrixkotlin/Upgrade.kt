@@ -16,21 +16,21 @@ class Upgrade : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityUpgradeBinding.inflate(layoutInflater)
+        binding=ActivityUpgradeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var mediaPlayer = MediaPlayer.create(applicationContext, R.raw.swipesound)
+        var mediaPlayer=MediaPlayer.create(applicationContext, R.raw.swipesound)
         mediaPlayer.start()
 
-        val button8 = findViewById<Button>(R.id.button8)
+        val button8=findViewById<Button>(R.id.button8)
         button8.setOnClickListener() {
-            intent = Intent(this, Wildmutt::class.java)
+            intent=Intent(this, Wildmutt::class.java)
             startActivity(intent)
         }
 
-        val button18 = findViewById<Button>(R.id.button18)
+        val button18=findViewById<Button>(R.id.button18)
         button18.setOnClickListener() {
-            intent = Intent(this, Stinkfly::class.java)
+            intent=Intent(this, Stinkfly::class.java)
             startActivity(intent)
         }
 
