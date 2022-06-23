@@ -12,7 +12,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.DeviceDefault">
+        android:theme="@android:style/Theme.DeviceDefault"
+        android:noHistory="true">
         <uses-library
             android:name="com.google.android.wearable"
             android:required="true" />
@@ -24,47 +25,58 @@
         <activity
             android:name=".xlr8"
             android:exported="false"
-            android:label="@string/title_activity_xlr8"/>
+            android:label="@string/title_activity_xlr8"
+            android:noHistory="true"/>
         <activity
             android:name=".Wildmutt"
             android:exported="false"
-            android:label="@string/title_activity_wildmutt"/>
+            android:label="@string/title_activity_wildmutt"
+            android:noHistory="true"/>
         <activity
             android:name=".Upgrade"
             android:exported="false"
-            android:label="@string/title_activity_cannonball" />
+            android:label="@string/title_activity_cannonball"
+            android:noHistory="true"/>
         <activity
             android:name=".Stinkfly"
             android:exported="false"
-            android:label="@string/title_activity_stinkfly" />
+            android:label="@string/title_activity_stinkfly"
+            android:noHistory="true"/>
         <activity
             android:name=".Ripjaws"
             android:exported="false"
-            android:label="@string/title_activity_ripjaws" />
+            android:label="@string/title_activity_ripjaws"
+            android:noHistory="true"/>
         <activity
             android:name=".Heatblast"
             android:exported="false"
-            android:label="@string/title_activity_heatblast" />
+            android:label="@string/title_activity_heatblast"
+            android:noHistory="true"/>
         <activity
             android:name=".Graymatter"
             android:exported="false"
-            android:label="@string/title_activity_graymatter" />
+            android:label="@string/title_activity_graymatter"
+            android:noHistory="true"/>
         <activity
             android:name=".Ghostfreak"
             android:exported="false"
-            android:label="@string/title_activity_ghostfreak" />
+            android:label="@string/title_activity_ghostfreak"
+            android:noHistory="true"/>
         <activity
             android:name=".FourArms"
             android:exported="false"
-            android:label="@string/title_activity_fourarms"/>
+            android:label="@string/title_activity_fourarms"
+            android:noHistory="true"/>
         <activity
             android:name=".Diamonhead"
             android:exported="false"
-            android:label="@string/title_activity_diamonhead" />
+            android:label="@string/title_activity_diamonhead"
+            android:noHistory="true"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

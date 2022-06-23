@@ -15,6 +15,7 @@ import com.example.omnitrixkotlin.databinding.ActivityGhostfreakBinding
 
 class FourArms : Activity() {
 
+    var backPressedTime: Long=0
     private lateinit var binding: ActivityFourarmsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,4 +40,16 @@ class FourArms : Activity() {
         }
 
     }
+
+    override fun onBackPressed() {
+        if (backPressedTime+2000>System.currentTimeMillis()) {
+            super.onBackPressed()
+            finish()
+        }
+        else {
+            Toast.makeText(this, "Press back again to leave the app.", Toast.LENGTH_LONG).show()
+        }
+        backPressedTime=System.currentTimeMillis()
+    }
+
 }

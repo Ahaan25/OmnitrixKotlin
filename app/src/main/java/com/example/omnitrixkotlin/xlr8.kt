@@ -10,6 +10,7 @@ import com.example.omnitrixkotlin.databinding.ActivityXlr8Binding
 
 class xlr8 : Activity() {
 
+    var backPressedTime: Long=0
     private lateinit var binding: ActivityXlr8Binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,5 +33,18 @@ class xlr8 : Activity() {
             intent=Intent(this, Wildmutt::class.java)
             startActivity(intent)
         }
+
     }
+
+    override fun onBackPressed() {
+        if (backPressedTime+2000>System.currentTimeMillis()) {
+            super.onBackPressed()
+            finish()
+        }
+        else {
+            Toast.makeText(this, "Press back again to leave the app.", Toast.LENGTH_LONG).show()
+        }
+        backPressedTime=System.currentTimeMillis()
+    }
+
 }

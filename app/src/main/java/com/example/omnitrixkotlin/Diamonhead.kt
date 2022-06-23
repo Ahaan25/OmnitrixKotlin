@@ -3,15 +3,18 @@ package com.example.omnitrixkotlin
 import android.app.Activity
 import android.content.Intent
 import android.media.MediaPlayer
+import android.os.Build
 import android.os.Bundle
 import android.transition.Slide
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.Toast
 import com.example.omnitrixkotlin.databinding.ActivityDiamonheadBinding
+import kotlin.system.exitProcess
 
 class Diamonhead : Activity() {
 
+    var backPressedTime: Long=0
     private lateinit var binding: ActivityDiamonheadBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,4 +39,16 @@ class Diamonhead : Activity() {
         }
 
     }
+
+    override fun onBackPressed() {
+        if (backPressedTime+2000>System.currentTimeMillis()) {
+            super.onBackPressed()
+            finish()
+        }
+        else {
+            Toast.makeText(this, "Press back again to leave the app.", Toast.LENGTH_LONG).show()
+        }
+        backPressedTime=System.currentTimeMillis()
+    }
+
 }
